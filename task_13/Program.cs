@@ -2,18 +2,18 @@
 
 Console.WriteLine ("Введите любое число");
 int a = Convert.ToInt32(Console.ReadLine());
-if (a < 100)
+if (a > 99)
 {
-    Console.WriteLine("такой цифры нет");  
-}
-else {
     while (a > 999)
     {
         a = a / 10;
         Console.WriteLine(a);
     }
     int b = a %10;
-Console.WriteLine(b);
+    Console.WriteLine(b);
+} else 
+{
+    Console.WriteLine("такой цифры нет");   
 }
 
 
